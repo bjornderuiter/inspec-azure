@@ -10,7 +10,7 @@ module Azure
               warn_deprecation(k, v) if k.is_a?(String)
               [:"#{k}", v]
             end
-
+            
             filtertable_where(conditions.map(&string_warn).to_h, &block)
           end
 

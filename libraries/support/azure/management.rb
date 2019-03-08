@@ -68,7 +68,7 @@ module Azure
       get(
         url: link(location: 'Microsoft.Network/networkSecurityGroups',
                   resource_group: resource_group) + id,
-        api_version: '2018-02-01',
+        api_version: '2018-11-01',
       )
     end
 

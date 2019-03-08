@@ -12,7 +12,7 @@ class AzurermResourceGroups < AzurermPluralResource
   EXAMPLE
 
   FilterTable.create
-             .register_column(:names, field: 'name')
+             .register_column(:name, field: 'name')
              .install_filter_methods_on_resource(self, :table)
 
   attr_reader :table
